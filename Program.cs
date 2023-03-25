@@ -20,14 +20,14 @@ string[] ShowLessOrEqual(string[] inputArray, int findSize)
     }
     //После того как длина найдена, переходим к формированию нового массива
     string[] result = new string[size];
-    for (int i = 0; i < size; i++)
+    for (int m = 0; m < size; m++)
     {
-        for (int l = 0; l < inputArray.Length; l++)
+        for (int j = 0; j < inputArray.Length; j++)
         {
-            if (inputArray[l].Length <= findSize)
+            if (inputArray[j].Length <= findSize)
             {
-                result[i] = inputArray[l];
-                i++;
+                result[m] = inputArray[j];
+                m++;
             }
         }
     }
